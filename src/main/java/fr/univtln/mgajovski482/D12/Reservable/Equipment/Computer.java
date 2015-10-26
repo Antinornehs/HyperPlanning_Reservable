@@ -8,13 +8,15 @@ public class Computer  extends AbstractEquipment<Computer>{
     public  enum OS{UNKNOWN, LINUX, WINDOWS, IOS;
 
         public static OS getRandom() {
+
             return values()[(int) (Math.random() * values().length)];
-        }}
+        }
+    }
 
     private OS os;
 
-    public Computer(){
-        super();
+    public Computer(String brand){
+        super(brand);
     }
 
     public Computer os(OS os){

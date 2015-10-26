@@ -6,8 +6,8 @@ package fr.univtln.mgajovski482.D12.Reservable.Equipment;
 public class Projector extends AbstractEquipment<Projector> {
 
 
-    public Projector(){
-        super();
+    public Projector(String brand){
+        super(brand);
     }
 
     @Override

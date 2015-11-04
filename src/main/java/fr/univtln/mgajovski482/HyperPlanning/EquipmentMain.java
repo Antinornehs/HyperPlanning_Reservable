@@ -1,6 +1,11 @@
 package fr.univtln.mgajovski482.HyperPlanning;
 
+import fr.univtln.mgajovski482.HyperPlanning.Other.Consts;
 import fr.univtln.mgajovski482.HyperPlanning.Reservable.Equipment.Generator.EquipmentGenerator;
+import fr.univtln.mgajovski482.HyperPlanning.Reservable.Room.Generator.RoomGenerator;
+import fr.univtln.mgajovski482.HyperPlanning.Reservable.Room.Room;
+import fr.univtln.mgajovski482.HyperPlanning.Schedule.Generator.ScheduleGenerator;
+import fr.univtln.mgajovski482.HyperPlanning.Schedule.Schedule;
 
 import java.util.logging.Logger;
 
@@ -15,7 +20,16 @@ public class EquipmentMain {
 
     public EquipmentMain() throws Exception {
 
-        EquipmentGenerator.generateEquipments(100,100);
+        EquipmentGenerator.generateEquipments(
+                Consts.COMPUTERS_TO_GENERATE,
+                Consts.PROJECTORS_TO_GENERATE);
+
+        RoomGenerator.generateRooms(
+                Consts.ROOMS_TO_GENERATE);
+
+        for(int i = 0; i < 10; i++)
+            ScheduleGenerator.generateSchedule();
+
         logger.info("Equipments Package Initialized !");
     }
 

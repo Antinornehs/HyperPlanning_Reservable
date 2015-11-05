@@ -57,6 +57,17 @@ public class Schedule {
         this.toCalendar = toCalendar;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        if(this.id == ID-1){
+            ID--;
+        }
+        this.id = id;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

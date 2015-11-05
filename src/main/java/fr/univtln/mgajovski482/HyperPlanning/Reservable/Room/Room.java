@@ -11,6 +11,11 @@ public class Room implements Reservable{
     private String  name;
     private int     nbOfPlaces;
 
+    public String getName() {
+        return name;
+    }
 
-
+    public int getNbOfPlaces() {
+        return nbOfPlaces;
+    }
 }

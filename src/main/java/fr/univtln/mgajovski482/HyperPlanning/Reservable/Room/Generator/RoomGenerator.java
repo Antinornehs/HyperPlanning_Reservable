@@ -7,8 +7,20 @@ import fr.univtln.mgajovski482.HyperPlanning.Reservable.Room.Room;
 import java.util.Random;
 
 /**
- * Created by Maxime on 04/11/2015.
+ * <b>RoomGenerator est la classe permettant de generer des salles de cours.</b>
+ * <p>
+ * La classe roomGenerator genere aléatoirement :
+ * <ul>
+ *     <li>Un nom de salle; de la forme : 'Lettre' + (x * Chiffre)
+ *     (x éant défini dans la classe Consts)</li>
+ *     <li>Une capacité d'accueil aléatoire borné
+ *     (Ces bornes étant aussi définies dans la classe Consts)</li>
+ * </ul>
+ *
+ * @see Room
+ * @author Maxime
  */
+
 public class RoomGenerator {
 
     private static final char[] letters;

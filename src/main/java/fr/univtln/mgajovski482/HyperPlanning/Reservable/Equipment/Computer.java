@@ -1,8 +1,19 @@
 package fr.univtln.mgajovski482.HyperPlanning.Reservable.Equipment;
 
 /**
- * Created by Maxime on 18/10/2015.
+ * <p>
+ * <b>Computer est la classe representant les ordinateurs, il etend AbstractEquipment</b>
+ * Un ordinateur est caracterise par les informations suivantes :
+ * <ul>
+ *     <li>Son Os : UNKNOWN, LINUX, WINDOWS, IOS    (OS)</li>
+ *     <li>Sa marque                                (String)</li>
+ * </ul>
+ *
+ * @see AbstractEquipment
+ * @author Maxime
  */
+
+
 public class Computer  extends AbstractEquipment<Computer>{
 
     public  enum OS{UNKNOWN, LINUX, WINDOWS, IOS;

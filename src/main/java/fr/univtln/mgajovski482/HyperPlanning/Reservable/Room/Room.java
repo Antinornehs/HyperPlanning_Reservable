@@ -6,20 +6,47 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Maxime on 18/10/2015.
+ * <b>Room est la classe représentant les salles de cours.</b>
+ * <p>
+ * Une salle de cours est caractérisée par les informations suivantes :
+ * <ul>
+ *     <li>Un id unique, qui est le nom de la salle (String)</li>
+ *     <li>Une capacité d'accueil                   (Int)</li>
+ * </ul>
+ *
+ * <p>
+ * Les salles sont différentiés à l'aide d'un id auto-incrémental.
+ * Les différentes salles sont stockées à partir d'une Map.
+ *
+ *
+ * @author Maxime
  */
+
 
 public class Room implements Reservable{
 
-    public static Map<String, Room> staticRoomMap = new HashMap<String, Room>();
+    public static Map<String, Room> staticRoomMap
+            = new HashMap<String, Room>();
 
-    private String  id;
+    private final String  id;
     private int     capacity;
 
     public Room(String id, int capacity){
         this.id         = id;
         this.capacity   = capacity;
         staticRoomMap.put(id, this);
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
     }
 
     @Override

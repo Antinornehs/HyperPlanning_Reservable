@@ -7,8 +7,33 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Created by Maxime on 18/10/2015.
+ * <b>AbstractEquipment est une classe abstraite representant les differents equipements disponibles</b>
+ * <p>
+ * Tout objet etendant AbstractEquipment possede :
+ * <ul>
+ *     <li>Un id unique et auto-incremental     (Int)</li>
+ *     <li>Un état :  OLD, ENOUGH, GOOD, NEW    (CONDITION)</li>
+ *     <li>Une marque                           (String)</li>
+ *     <li>Des informations diverses            (String)</li>
+ * </ul>
+ *
+ *
+ * <p>
+ * Les classes qui etendent AbstractEquipment sont :
+ * <ul>
+ *     <li>Computer</li>
+ *     <li>Projector</li>
+ * </ul>
+ *
+ *
+ * <p>
+ * Les AbstractEquipments sont differenties à l'aide d'un id auto-incrémental.
+ * Les differents AbstractEquipments sont stockes à partir d'une Map.
+ *
+ *
+ * @author Maxime
  */
+
 public abstract class AbstractEquipment<T extends AbstractEquipment<?>> implements Reservable {
 
     public enum CONDITION {OLD, ENOUGH, GOOD, NEW;

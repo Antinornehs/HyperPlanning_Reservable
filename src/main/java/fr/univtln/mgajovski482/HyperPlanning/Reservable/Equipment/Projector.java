@@ -1,22 +1,3 @@
-<<<<<<< HEAD
-package fr.univtln.mgajovski482.HyperPlanning.Reservable.Equipment;
-
-/**
- * Created by Maxime on 18/10/2015.
- */
-public class Projector extends AbstractEquipment<Projector> {
-
-
-    public Projector(String brand){
-        super(brand);
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
-}
-=======
 package fr.univtln.mgajovski482.HyperPlanning.Reservable.Equipment;
 
 
@@ -59,4 +40,3 @@ public class Projector extends AbstractEquipment<Projector> {
         return super.toString() + stringBuilder.toString() ;
     }
 }
->>>>>>> ed137d0fc0e52efc2f8369eac73f5c8820af76bb

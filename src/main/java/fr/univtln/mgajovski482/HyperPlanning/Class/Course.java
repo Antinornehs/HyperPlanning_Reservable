@@ -10,19 +10,19 @@ import java.util.*;
 /**
  * <b>Course est la classe representant les cours dispenses au sein d'un etablissement</b>
  * <p>
- * Un cours est caractérisé par les informations suivantes :
+ * Un cours est caractérise par les informations suivantes :
  * <ul>
  *     <li>Une unite d'enseignement (TeachingUnit)</li>
  *     <li>Une salle                (Room)</li>
  *     <li>Une tranche horaire      (Schedule)</li>
- *     <li>Un type de cours         (Type) qui peut être un TP, TD ou un CM.</li>
+ *     <li>Un type de cours         (Type) qui peut etre un TP, TD ou un CM.</li>
  *     <li>Un professeur            (Teacher)</li>
- *     <li>Un état de validation    (isValidated)</li>
+ *     <li>Un etat de validation    (isValidated)</li>
  * </ul>
  *
  * <p>
- * Les cours sont differentiés à l'aide d'un id auto-incrémental.
- * Les différents cours sont stockes à partir d'une Map.
+ * Les cours sont differenties à l'aide d'un id auto-incremental.
+ * Les differents cours sont stockes à partir d'une Map.
  *
  * @author Maxime
  */

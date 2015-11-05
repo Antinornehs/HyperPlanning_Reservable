@@ -1,13 +1,15 @@
 package fr.univtln.mgajovski482.HyperPlanning.Schedule;
 
 import java.util.Calendar;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
- * <b>Schedule est la classe représentant des tranches horaires</b>
+ * <b>Schedule est la classe representant des tranches horaires</b>
  * <p>
- * Une tranche horaire est caractérisée par les informations suivantes :
+ * Une tranche horaire est caracterisee par les informations suivantes :
  * <ul>
- *     <li>Un calendrier de début   (fromCalendar)</li>
+ *     <li>Un calendrier de debut   (fromCalendar)</li>
  *     <li>Un calendrier de fin     (toCalendar)</li>
  * </ul>
  *
@@ -22,13 +24,20 @@ public class Schedule {
             "Octobre","Novembre","Décembre"
     };
 
+    private static int ID = 0;
+    public static Map<Integer, Schedule> staticScheduleMap
+            = new HashMap<Integer, Schedule>();
 
+    private int id;
     private Calendar fromCalendar;
     private Calendar toCalendar;
 
     public Schedule(Calendar fromCalendar, Calendar toCalendar){
+        this.id = ID;
         this.fromCalendar   = fromCalendar;
         this.toCalendar     = toCalendar;
+        ID++;
+        staticScheduleMap.put(id, this);
     }
 
 
@@ -46,6 +55,22 @@ public class Schedule {
 
     public void setToCalendar(Calendar toCalendar) {
         this.toCalendar = toCalendar;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Schedule)) return false;
+
+        Schedule schedule = (Schedule) o;
+
+        return id == schedule.id;
+
+    }
+
+    @Override
+    public int hashCode() {
+        return id;
     }
 
     @Override

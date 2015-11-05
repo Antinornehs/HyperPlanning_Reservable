@@ -6,17 +6,17 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * <b>Room est la classe représentant les salles de cours.</b>
+ * <b>Room est la classe representant les salles de cours.</b>
  * <p>
- * Une salle de cours est caractérisée par les informations suivantes :
+ * Une salle de cours est caracterisee par les informations suivantes :
  * <ul>
  *     <li>Un id unique, qui est le nom de la salle (String)</li>
- *     <li>Une capacité d'accueil                   (Int)</li>
+ *     <li>Une capacite d'accueil                   (Int)</li>
  * </ul>
  *
  * <p>
- * Les salles sont différentiés à l'aide d'un id auto-incrémental.
- * Les différentes salles sont stockées à partir d'une Map.
+ * Les salles sont differenties à l'aide d'un id auto-incremental.
+ * Les differentes salles sont stockees à partir d'une Map.
  *
  *
  * @author Maxime

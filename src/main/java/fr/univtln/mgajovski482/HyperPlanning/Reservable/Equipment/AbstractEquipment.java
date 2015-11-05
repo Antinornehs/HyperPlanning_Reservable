@@ -12,7 +12,7 @@ import java.util.Map;
  * Tout objet etendant AbstractEquipment possede :
  * <ul>
  *     <li>Un id unique et auto-incremental     (Int)</li>
- *     <li>Un état :  OLD, ENOUGH, GOOD, NEW    (CONDITION)</li>
+ *     <li>Un etat :  OLD, ENOUGH, GOOD, NEW    (CONDITION)</li>
  *     <li>Une marque                           (String)</li>
  *     <li>Des informations diverses            (String)</li>
  * </ul>
@@ -27,7 +27,7 @@ import java.util.Map;
  *
  *
  * <p>
- * Les AbstractEquipments sont differenties à l'aide d'un id auto-incrémental.
+ * Les AbstractEquipments sont differenties à l'aide d'un id auto-incremental.
  * Les differents AbstractEquipments sont stockes à partir d'une Map.
  *
  *

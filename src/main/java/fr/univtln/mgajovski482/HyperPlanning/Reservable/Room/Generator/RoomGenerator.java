@@ -12,9 +12,9 @@ import java.util.Random;
  * La classe roomGenerator genere aléatoirement :
  * <ul>
  *     <li>Un nom de salle; de la forme : 'Lettre' + (x * Chiffre)
- *     (x éant défini dans la classe Consts)</li>
- *     <li>Une capacité d'accueil aléatoire borné
- *     (Ces bornes étant aussi définies dans la classe Consts)</li>
+ *     (x éant defini dans la classe Consts)</li>
+ *     <li>Une capacite d'accueil aleatoire borne
+ *     (Ces bornes etant aussi definies dans la classe Consts)</li>
  * </ul>
  *
  * @see Room

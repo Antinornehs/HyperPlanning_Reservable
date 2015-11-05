@@ -18,7 +18,7 @@ import java.util.Random;
  *     <li>Salles                       (Room.staticRoomMap)</li>
  * </ul>
  *
- * Afin de tirer aléatoirement parmis les valeurs disponibles
+ * Afin de tirer aleatoirement parmis les valeurs disponibles
  *
  *  @see Course
  *  @author Maxime

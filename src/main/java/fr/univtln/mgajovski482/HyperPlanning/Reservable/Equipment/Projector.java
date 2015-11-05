@@ -2,12 +2,12 @@ package fr.univtln.mgajovski482.HyperPlanning.Reservable.Equipment;
 
 
 /**
- * <b>Projector (Projecteur) est la classe representant les projecteurs, il étend AbstractEquipement</b>
+ * <b>Projector (Projecteur) est la classe representant les projecteurs, il etend AbstractEquipement</b>
  *
  * <p>
- * Un projecteur est caractérise par les informations suivantes :
+ * Un projecteur est caracterise par les informations suivantes :
  * <ul>
- *     <li>Sa résolution            (Int)</li>
+ *     <li>Sa resolution            (Int)</li>
  *     <li>Sa marque                (String)</li>
  * </ul>
  *

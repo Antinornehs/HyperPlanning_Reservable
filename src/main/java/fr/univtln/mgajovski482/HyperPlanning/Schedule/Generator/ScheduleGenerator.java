@@ -8,16 +8,16 @@ import java.util.GregorianCalendar;
 import java.util.Random;
 
 /**
- * <b>ScheduleGenerator est la classe générant aléatoirement différentes tranches horaires</b>
+ * <b>ScheduleGenerator est la classe generant aléatoirement differentes tranches horaires</b>
  *
  * <p>
  * Cette classe génère un premier calendrier (fromCalendar) à partir de la date courante
- * à laquelle on ajoute des jours (bornés entre : MIN_DAY_TO_ADD et MAX_DAY_TO_ADD)
- * tout en fixant une heure plausible correspondant aux heures de cours étudiantes.
+ * à laquelle on ajoute des jours (bornes entre : MIN_DAY_TO_ADD et MAX_DAY_TO_ADD)
+ * tout en fixant une heure plausible correspondant aux heures de cours etudiantes.
  *
  * <p>
  * Un deuxième calendrier (toCalendar) copie ce premier calendrier et rajoute seulement des heures
- * (bornées entre MIN_HOUR_TO_TEACH et MAX_HOUR_TO_TEACH) correspondant aux heures de cours données.
+ * (bornées entre MIN_HOUR_TO_TEACH et MAX_HOUR_TO_TEACH) correspondant aux heures de cours donnees.
  *
  *  @see Calendar
  *  @see Schedule

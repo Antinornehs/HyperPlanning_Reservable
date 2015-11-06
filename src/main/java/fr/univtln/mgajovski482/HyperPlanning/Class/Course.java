@@ -57,7 +57,7 @@ public class Course {
     public static int ID = 0;
 
 
-    private final int id;
+    private int id;
     private TeachingUnit    teachingUnit;
     private Room            classRoom;
     private Schedule        schedule;
@@ -102,10 +102,6 @@ public class Course {
 
     public void setIsValidated(boolean bool){
         this.isValidated = bool;
-    }
-
-    public int getId() {
-        return id;
     }
 
     public Teacher getTeacher() {
@@ -174,6 +170,17 @@ public class Course {
             else return coursesOfTheWeek;
         }
         return coursesOfTheWeek;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        if(this.id == ID-1){
+            ID--;
+        }
+        this.id = id;
     }
 
     @Override

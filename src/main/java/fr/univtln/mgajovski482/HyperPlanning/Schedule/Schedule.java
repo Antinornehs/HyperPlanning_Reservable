@@ -31,11 +31,13 @@ public class Schedule {
     private int id;
     private Calendar fromCalendar;
     private Calendar toCalendar;
+    private int hourDuration;
 
     public Schedule(Calendar fromCalendar, Calendar toCalendar){
         this.id = ID;
         this.fromCalendar   = fromCalendar;
         this.toCalendar     = toCalendar;
+        hourDuration = toCalendar.get(Calendar.HOUR_OF_DAY) - fromCalendar.get(Calendar.HOUR_OF_DAY);
         ID++;
         staticScheduleMap.put(id, this);
     }
@@ -66,6 +68,10 @@ public class Schedule {
 
         return id == schedule.id;
 
+    }
+
+    public int getHourDuration() {
+        return hourDuration;
     }
 
     @Override

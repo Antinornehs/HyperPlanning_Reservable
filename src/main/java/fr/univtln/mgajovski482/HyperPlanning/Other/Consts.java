@@ -27,14 +27,11 @@ public class Consts {
     public static final int PROJECTORS_TO_GENERATE  = 100;
 
     public static final int MIN_DAY_TO_ADD = 1;
-    public static final int MAX_DAY_TO_ADD = 30;
+    public static final int MAX_DAY_TO_ADD = 200;
 
     public static final int ENDING_SCHOOL_HOUR      = 16;
     public static final int BEGINNING_SCHOOL_HOUR   = 8;
 
     public static final int MAX_HOUR_TO_TEACH       = 4;
     public static final int MIN_HOUR_TO_TEACH       = 1;
-
-    public static final int COURSES_TO_GENERATE     =   100;
-
 }

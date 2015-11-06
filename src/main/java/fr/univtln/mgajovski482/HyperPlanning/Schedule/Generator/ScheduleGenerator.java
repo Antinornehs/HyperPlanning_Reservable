@@ -31,6 +31,9 @@ public class ScheduleGenerator {
         Calendar fromCalendar       = Calendar.getInstance();
         Calendar toCalendar         = new GregorianCalendar();
 
+        fromCalendar.set(Calendar.MINUTE, 0);
+        fromCalendar.set(Calendar.SECOND, 0);
+
         fromCalendar.add(
                 Calendar.DAY_OF_YEAR,
                 getRandomNumber(

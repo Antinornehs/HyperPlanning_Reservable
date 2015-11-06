@@ -53,7 +53,7 @@ public class Course {
 
     }
 
-    public static Map<Integer, Course> staticClassMap = new HashMap<Integer, Course>();
+    public static Map<Integer, Course> staticCourseMap = new HashMap<Integer, Course>();
     public static int ID = 0;
 
 
@@ -67,7 +67,7 @@ public class Course {
 
     public Course(){
         this.id = ID;
-        staticClassMap.put(id, this);
+        staticCourseMap.put(id, this);
         ID++;
     }
 
@@ -102,6 +102,10 @@ public class Course {
 
     public void setIsValidated(boolean bool){
         this.isValidated = bool;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public Teacher getTeacher() {
@@ -142,6 +146,34 @@ public class Course {
 
     public void setTeachingUnit(TeachingUnit teachingUnit) {
         this.teachingUnit = teachingUnit;
+    }
+
+    private static List<Course> sortByScheduleBeginning(){
+
+        List<Course> courses = Arrays.asList(staticCourseMap.values().toArray(new Course[0]));
+
+        Collections.sort(courses, new Comparator<Course>() {
+            public int compare(Course course1, Course course2) {
+                return course1.schedule.getFromCalendar().compareTo(
+                        course2.schedule.getFromCalendar());
+            }
+        });
+
+        return courses;
+    }
+
+    public static List<Course> getCoursesOfTheWeek(){
+        List <Course> sortedCourses = sortByScheduleBeginning();
+        List<Course> coursesOfTheWeek = new ArrayList<Course>();
+        Calendar currentCalendar = Calendar.getInstance();
+
+        currentCalendar.add(Calendar.DAY_OF_YEAR, 7);
+        for(Course currentCourse : sortedCourses){
+            if(currentCourse.schedule.getFromCalendar().before(currentCalendar))
+                coursesOfTheWeek.add(currentCourse);
+            else return coursesOfTheWeek;
+        }
+        return coursesOfTheWeek;
     }
 
     @Override

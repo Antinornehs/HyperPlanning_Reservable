@@ -57,7 +57,7 @@ public class Course {
     public static int ID = 0;
 
 
-    private final int id;
+    private int id;
     private TeachingUnit    teachingUnit;
     private Room            classRoom;
     private Schedule        schedule;
@@ -143,6 +143,19 @@ public class Course {
     public void setTeachingUnit(TeachingUnit teachingUnit) {
         this.teachingUnit = teachingUnit;
     }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        if(this.id == ID-1){
+            ID--;
+        }
+        this.id = id;
+    }
+
+
 
     @Override
     public String toString() {

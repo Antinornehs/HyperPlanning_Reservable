@@ -1,7 +1,7 @@
 package fr.univtln.mgajovski482.HyperPlanning;
 
-import fr.univtln.mgajovski482.HyperPlanning.Class.ClassGenerator.CourseGenerator;
-import fr.univtln.mgajovski482.HyperPlanning.Class.Course;
+import fr.univtln.mgajovski482.HyperPlanning.Course.CourseGenerator.CourseGenerator;
+import fr.univtln.mgajovski482.HyperPlanning.Course.Course;
 import fr.univtln.mgajovski482.HyperPlanning.Reservable.Equipment.Generator.EquipmentGenerator;
 import fr.univtln.mgajovski482.HyperPlanning.Reservable.Room.Generator.RoomGenerator;
 import fr.univtln.mgajovski482.HyperPlanning.Other.Consts;

@@ -25,6 +25,7 @@ public class Consts {
     public static final int ROOMS_TO_GENERATE       = 300;
     public static final int COMPUTERS_TO_GENERATE   = 100;
     public static final int PROJECTORS_TO_GENERATE  = 100;
+    public static final int COURSES_TO_GENERATE  = 100;
 
     public static final int MIN_DAY_TO_ADD = 1;
     public static final int MAX_DAY_TO_ADD = 200;
